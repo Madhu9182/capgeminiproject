@@ -18,10 +18,11 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
-	private UserService awsService;
+	private UserService gcpService;
 	
 	@Autowired
-	private JwtFilter azureService;
+	private JwtFilter gcpService;
+
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {

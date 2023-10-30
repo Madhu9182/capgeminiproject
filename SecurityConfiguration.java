@@ -22,6 +22,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
 	private JwtFilter azureService;
+
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
